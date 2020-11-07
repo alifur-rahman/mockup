@@ -1,0 +1,114 @@
+@media all and (max-width:1241px){
+    .top-center-area {
+        flex: 0 0 10.33%;
+    }
+    .top-right-area {
+        flex: 0 0 43.33%;
+    }
+    .button a {
+        font-size: 1.1rem;
+    }
+    .view-product-area {
+        column-count: 4;
+    }
+}
+@media all and (max-width:1110px){
+    .catagory-menu {
+        position: relative;
+    }
+    .catagory-menu ul {
+        flex: 0 0 90%;
+    }
+    .search-bar {
+        position: absolute;
+        right: 0;
+        top: 6px;
+        width: 0%;
+    }
+    .search-bar i {
+        right: 1%;
+        top: 5px;
+        background: #fff;
+        border-radius: 50px;
+        border: 1px solid;
+    }
+    .search-bar input {
+        transition: 1s;
+        width: 0;
+        opacity: 0;
+    }
+    .now.reading ul li a {
+        padding: 1.2rem 1.5rem;
+    }
+}
+@media all and (max-width:991px){
+    .catagory-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .single-history {
+        width: 50%;
+    }
+    .left-menu-area {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        top: 50px;
+        left: -100%;
+        transition: 1s;
+    }
+    .close-bar,
+    .catagory-header i {
+        display: block;
+    }
+    .button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .top-top-area {
+        flex: 0 0 10.33%;
+    }
+    .top-center-area {
+        flex: 0 0 25.33%;
+        justify-content: right;
+    }
+    .top-right-area {
+        flex: 0 0 60.33%;
+    }
+}
+@media all and (max-width:768px){
+    .view-product-area {
+        column-count: 3;
+    }
+}
+@media all and (max-width:687px){
+    .top-center-area {
+        display: none;
+    }
+    .top-right-area {
+        flex: 0 0 87.33%;
+    }
+    .top-menu ul li a {
+        margin-left: 1rem;
+    }
+    .catagory-menu ul li a {
+        margin-right: .3rem;
+        font-size: 1.3rem;
+    }
+    .view-product-area {
+        column-count: 2;
+    }
+}
+@media all and (max-width:455px){
+    .view-product-area {
+        column-count: 1;
+    }
+    .catagory-menu ul li a {
+        padding: .6rem 1rem;
+        margin-right: 0;
+    }
+    .single-history {
+        width: 70%;
+    }
+}

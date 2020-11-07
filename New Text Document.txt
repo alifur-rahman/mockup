@@ -1,0 +1,6 @@
+ProximaNova :-
+		Regular;	
+		Bold;
+		
+
+

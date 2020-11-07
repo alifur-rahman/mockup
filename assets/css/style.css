@@ -1,0 +1,481 @@
+/**
+Templatte Name:
+Template URL:
+Author:
+Autho URL:
+Description:
+Keywords:
+**/
+/********************************/
+/*********0.1: Custom fonts*******/
+/******************************/
+@font-face{
+    font-family: ProximaNova-Regular;
+    src: url(assets/fonts/ProximaNova-Regular.otf);
+}
+@font-face{
+    font-family: ProximaNova-Bold;
+    src: url(assets/fonts/ProximaNova-Bold.otf);
+}
+/********************************/
+/*********0.2: Global CSS*******/
+/******************************/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: ProximaNova-Regular;
+    font-size: 1.3rem;
+    overflow-X : hidden;
+}
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.catagory-header i {
+	font-size: 2.2rem;
+	color: #2F364A;
+	display: inline-block;
+	border: 1px solid;
+	padding: 0.6rem 0.8rem;
+	border-radius: 3px;
+	cursor: pointer;
+	display: none;
+}
+.close-bar {
+	color: #fff;
+	font-size: 2.5rem;
+	cursor: pointer;
+	display: inline-block;
+	border: 1px solid;
+	padding: .5rem .8rem;
+	border-radius: 5px;
+	display: none;
+}
+/********************************/
+/****1.1:- Start header top*****/
+/******************************/
+.header-top-area {
+	background: #2f364a;
+    display: flex;
+    flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+/*
+left area 
+*/
+.top-top-area {
+	display: flex;
+	flex: 0 0 33.33%;
+	padding-left: 2rem;
+}
+.top-top-area div {
+	width: 1rem;
+	height: 1rem;
+	background: #fff;
+	border-radius: 50px;
+	margin-right: 0.7rem;
+}
+.top-top-area div:nth-child(1){
+    background: #e76847;
+}
+.top-top-area div:nth-child(2){
+    background: #fabf00;
+}
+.top-top-area div:nth-child(3){
+    background: #52bea6;
+}
+/*
+top center area 
+*/
+.top-center-area {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex: 0 0 33.33%;
+}
+.top-center-area a{
+    color: #78829d;
+    transition: .4s;
+}
+.top-center-area a:hover{
+    color: #FFF;
+}
+.top-center-area i {
+    margin-right: .76rem;
+}
+/*
+top right area 
+*/
+.top-right-area {
+    flex: 0 0 33.33%;
+    
+}
+.top-menu {
+	float: right;
+}
+.top-menu ul {
+	display: flex;
+	align-items: center;
+}
+.top-menu ul li {
+    position: relative;
+    z-index: 10;
+}
+.top-menu ul li a {
+	font-size: 1.6rem;
+	display: inline-block;
+	padding: .5rem;
+	color: #78829d;
+	transition: .4s;
+	margin-left: 3rem;
+}
+.top-menu ul li a:hover{
+    color: #fff;
+}
+.top-menu ul li:last-child a{
+    background: #15a4fa;
+}
+/*
+user image 
+*/
+.user-img {
+	display: flex !important;
+	align-items: center;
+	justify-content: space-between;
+	color: #fff !important;
+}
+.top-menu .image {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50px;
+    border: 2px solid #eef1f7;
+    margin-right: 1rem;
+}
+.user-img i {
+	margin-left: 1rem;
+}
+/*
+drop down
+*/
+.top-menu ul ul {
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+.top-menu ul ul li a{
+    width: 100%;
+    transition: .4s;
+    color: #fff;
+}
+.top-menu ul ul li a:hover {
+	background: #24333c;
+}
+.top-menu ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+hr{
+    margin: 0;
+}
+/******************************/
+/****1.1:- End header top*****/
+/****************************/
+/******************************/
+/****1.2:- Start full area *****/
+/****************************/
+/*
+left area 
+*/
+.left-menu-area {
+	background: #11151e;
+	overflow: scroll;
+	overflow-x: hidden;
+	height: calc(100vh - 97px);
+}
+
+/*
+button
+*/
+.button {
+	background: #1f2637;
+	padding: 3rem 2rem;
+	margin-bottom: 1rem;
+}
+.button a {
+	display: inline-block;
+	background: #f2795a;
+	padding: 1.5rem 2rem;
+	color: #fff;
+	font-size: 1.6rem;
+	font-family: ProximaNova-Bold;
+	text-transform: uppercase;
+	font-weight: 600;
+    border-radius: .6rem;
+    transition: .4s;
+}
+.button a:hover{
+    background: #11151e;
+    color: #78829d;
+}
+/*
+now book area 
+*/
+.now.reading {
+	background: #1f2637;
+}
+.now.reading ul li a {
+	color: #78829d;
+	font-size: 1.5rem;
+	display: block;
+	padding: 1.2rem 2rem;
+	transition: .4s;
+}
+.now.reading ul li a i {
+	margin-right: 1rem;
+}
+.now.reading ul li a:hover{
+    background: #15a4fa;
+    color: #fff;
+}
+
+/*
+read title area 
+*/
+.read-title-area {
+	background: #1f2637;
+	margin-top: 1rem;
+	padding: 1.5rem 0;
+}
+.read-title-area ul li a {
+	color: #78829d;
+	font-size: 1.6rem;
+	display: inline-block;
+    padding: 1rem 2rem;
+    transition: .4s;
+} 
+.read-title-area ul li a:hover{
+    color: #fff;
+}
+.read-title-area ul li a span {
+	width: 1rem;
+	height: 1rem;
+	display: inline-block;
+	border-radius: 50px;
+	margin-right: .5rem;
+}
+.read-title-area ul li:nth-child(1) span{
+    background: #e64c66;
+}
+.read-title-area ul li:nth-child(2) span{
+    background: #ffab00;
+}
+.read-title-area ul li:nth-child(3) span{
+    background: #00bfdd;
+}
+.read-title-area ul li:nth-child(4) span{
+    background: #7874cf;
+}
+/*
+history area 
+*/
+.history-area {
+	background: #1f2637;
+	padding: 2.5rem 0 9rem 0;
+	margin-top: 1rem;
+}
+/*
+single histoy
+*/
+.single-history {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	margin-bottom: 5rem;
+}
+.single-history .icon {
+	color: #6f7d95;
+	font-size: 2rem;
+	padding-left: 2rem;
+	padding-right: 1rem;
+}
+.single-history .link a {
+	color: #6f7d95;
+    font-size: 1.4rem;
+    transition: .4s;
+}
+.single-history .link a:hover,
+.single-history .link a:hover span{
+    color: #fff;
+}
+.single-history .link a span:hover{
+    text-decoration: underline;
+}
+.single-history .link a span {
+	color: #97b3ce;
+    font-size: 1.5rem;
+    transition: .4s;
+}
+.single-history .link p {
+	color: #78829d;
+	font-size: 1.4rem;
+	margin-top: 1.5rem;
+}
+/*
+left area
+*/
+.catagory-header {
+	background: #eef1f7;
+	padding: 2.5rem 2rem;
+}
+.catagory-header h1 {
+	font-size: 2.2rem;
+	color: #444c63;
+}
+/*
+catagory menu
+*/
+.catagory-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #eef1f7;
+	padding: 1rem 1.5rem;
+}
+.catagory-menu ul {
+	display: flex;
+    align-content: center;
+    flex: 0 0 50%;
+}
+.catagory-menu ul li a {
+	color: #8c97b2;
+	display: inline-block;
+	padding: .6rem 1.5rem;
+	margin-right: 1rem;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    transition: .4s         ;
+}
+.mixitup-control-active,
+.catagory-menu ul li a:hover{
+    background: #97b3ce;
+    color: #fff !important;
+}
+/*
+search bar 
+*/
+.search-bar {
+    flex: 0 0 50%;
+    text-align: right;
+    position: relative;
+}
+.search-bar input {
+	color: #8c97b2;
+	font-size: 1.4rem;
+	border-radius: 50px;
+	padding: 1rem 2rem;
+	width: 80%;
+	display: inline-block;
+	border: 1.5px solid #c7cddb;
+}
+.search-bar i {
+	position: absolute;
+	color: #8c97b2;
+	font-size: 2rem;
+	top: 6px;
+	right: 2%;
+	cursor: pointer;
+	padding: .6rem;
+}
+/*
+view product item area 
+*/
+.view-product-scroll {
+	overflow: scroll;
+	height: calc(100vh - 211px);
+}
+.view-product-area {
+	padding: 2rem;
+	column-count: 5;
+}
+/*
+single  product item 
+*/
+.single.product-item {
+	overflow: hidden;
+	margin-bottom: 2rem;
+}
+.product-img {
+	width: 100%;
+	height: 325px;
+	border-radius: 6px;
+	margin-bottom: 1.5rem;
+}
+.product-content h2 {
+	color: #444c63;
+	font-size: 2.1rem;
+}
+.product-content p {
+	color: #6f7d95;
+	font-size: 1.5rem;
+	margin-bottom: .6rem;
+}
+.product-reviwe i {
+	color: #ffab00;
+}
+/******************************/
+/****1.1:- End full area *****/
+/****************************/
+/******************************/
+/****1.2:- Start footer area *****/
+/****************************/
+.footer-area {
+	background: #181e2c;
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+}
+.footer-area i {
+	display: inline-block;
+	color: #fff;
+	padding: 1.5rem;
+	font-size: 1.7rem;
+	background: #41495e;
+	transition: .4s;
+}
+.footer-area i:hover{
+	background: #15a4fa;
+}
+
+
+
+
+/******************************/
+/****1.2:- End footer area *****/
+/****************************/
