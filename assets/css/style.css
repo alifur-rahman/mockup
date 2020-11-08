@@ -33,7 +33,6 @@ body{
     margin: 0;
     font-family: ProximaNova-Regular;
     font-size: 1.3rem;
-    overflow-X : hidden;
 }
 h1,h2,h3,h4,h5,h6,p{
     padding: 0;
@@ -178,17 +177,18 @@ drop down
 	display: block;
 	position: absolute;
 	top: 100%;
-	left: 0;
-	width: 100%;
-    text-align: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: .4s;
+	right: 0;
+	width: 83%;
+	text-align: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: .4s;
 }
 .top-menu ul ul li a{
     width: 100%;
     transition: .4s;
-    color: #fff;
+	color: #fff;
+	margin: 0;
 }
 .top-menu ul ul li a:hover {
 	background: #24333c;
