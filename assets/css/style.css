@@ -33,6 +33,7 @@ body{
     margin: 0;
     font-family: ProximaNova-Regular;
 	font-size: 1.3rem;
+	overflow-x: hidden;
 }
 h1,h2,h3,h4,h5,h6,p{
     padding: 0;
@@ -459,7 +460,7 @@ single  product item
 	display: flex;
 	justify-content: flex-end;
 	position: fixed;
-	/* width: 100%; */
+	width: 100%;
 	left: 0;
 	bottom: 0;
 }
