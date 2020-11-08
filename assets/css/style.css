@@ -32,7 +32,8 @@ body{
     padding: 0;
     margin: 0;
     font-family: ProximaNova-Regular;
-    font-size: 1.3rem;
+	font-size: 1.3rem;
+	overflow-x: hidden;
 }
 h1,h2,h3,h4,h5,h6,p{
     padding: 0;
@@ -140,10 +141,9 @@ top right area
 .top-menu ul li a {
 	font-size: 1.6rem;
 	display: inline-block;
-	padding: .5rem;
+	padding: .5rem 1.5rem;
 	color: #78829d;
 	transition: .4s;
-	margin-left: 3rem;
 }
 .top-menu ul li a:hover{
     color: #fff;
@@ -176,13 +176,14 @@ drop down
 .top-menu ul ul {
 	display: block;
 	position: absolute;
-	top: 100%;
-	right: 0;
-	width: 83%;
+	top: 300%;
+	left: -80%;
+	width: 100%;
 	text-align: center;
 	visibility: hidden;
 	opacity: 0;
 	transition: .4s;
+	overflow: hidden;
 }
 .top-menu ul ul li a{
     width: 100%;
@@ -195,7 +196,9 @@ drop down
 }
 .top-menu ul li:hover ul {
     visibility: visible;
-    opacity: 1;
+	opacity: 1;
+	top: 100%;
+	left: 0;
 }
 hr{
     margin: 0;

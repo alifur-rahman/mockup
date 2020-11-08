@@ -89,9 +89,6 @@
     .top-right-area {
         flex: 0 0 87.33%;
     }
-    .top-menu ul li a {
-        margin-left: 1rem;
-    }
     .catagory-menu ul li a {
         margin-right: .3rem;
         font-size: 1.3rem;
