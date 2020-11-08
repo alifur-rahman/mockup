@@ -7,6 +7,7 @@ $(document).ready(function(){
             'width':'40%',
         });
         $('.search-bar input').css({
+            // 'display' : 'block',
             'width': '100%',
             'opacity': '1',
         });
