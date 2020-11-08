@@ -108,4 +108,8 @@
     .single-history {
         width: 70%;
     }
+    .top-menu ul li a {
+        font-size: 1.4rem;
+        padding: .5rem 1rem;
+    }
 }
